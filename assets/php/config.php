@@ -5,27 +5,12 @@ if (!isset($_SESSION['uname'])) {
     // header("location: " . $server . "/login/");
 }
 ?>
-<script>
-var vpmeta = document.createElement("meta");
-vpmeta.name = "viewport";
-vpmeta.content = "width=device-width, initial-scale=1";
-document.head.append(vpmeta);
-var chmeta = document.createElement("meta");
-chmeta.httpEquiv = "Content-Type";
-chmeta.content = "text/html;charset=UTF-8";
-document.head.append(chmeta);
-var btslink = document.createElement("link");
-btslink.rel = "stylesheet";
-btslink.href = "<?php echo $server; ?>/assets/css/bootstrap.min.css";
-document.head.append(btslink);
-var base = document.createElement("base");
-base.href = "<?php echo $server; ?>";
-document.head.append(base);
-var script = document.createElement("script");
-script.src = "<?php echo $server; ?>/assets/js/bootstrap.min.js";
-document.head.append(script);
-var falink = document.createElement("link");
-falink.rel = "stylesheet";
-falink.href = "<?php echo $server; ?>/assets/css/all.min.css";
-document.head.append(falink);
-</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="<?php echo $server; ?>/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php echo $server; ?>/assets/css/all.min.css">
+<base href="<?php echo $server; ?>">
+<script src="<?php echo $server; ?>/assets/js/bootstrap.min.js"></script>
+<script src="<?php echo $server; ?>/assets/js/jquery.min.js"></script>
+</head>
