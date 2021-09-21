@@ -10,7 +10,9 @@ if (!isset($_SESSION['uname'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/bootstrap-tagsinput.min.css">
-<link rel="stylesheet" href="<?php echo $server; ?>/assets/css/faa.min.css">
+<link rel="stylesheet" href="<?php echo $server; ?>/assets/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="<?php echo $server; ?>/assets/css/fontawesome-all.css">
+<link rel="stylesheet" href="<?php echo $server; ?>/assets/css/style.min.css">
 <base href="<?php echo $server; ?>">
 <script src="<?php echo $server; ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php echo $server; ?>/assets/js/jquery.min.js"></script>
