@@ -8,13 +8,16 @@
   font-size: 150%;
 }
 .login-form{
-  width: fit-content;
   padding: 20px;
   margin: 25px;
+  width: max-content;
 }
 .input-group{
   margin-bottom: 15px;
 }
 .input-group[data-why="passw"]{
   margin-bottom: 0;
+}
+.sub-btn{
+  padding-top: 15px;
 }
