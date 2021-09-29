@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="<?php echo __DIR__; ?>/../css/style.min.css">
+    <link rel="stylesheet" href="/../css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>آموزش یعنی AMY98.IR</title>
   </head>

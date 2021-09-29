@@ -3,10 +3,18 @@
   src: url("../font/AMYSans.ttf");
 }
 #open-menu{
+  display: none;
   padding: 5px;
-  width: 50px;
-  height: 50px;
+  font-size: 150%;
 }
-#open-menu::before{
-  font-size: 30px;
+.login-form{
+  width: fit-content;
+  padding: 20px;
+  margin: 25px;
+}
+.input-group{
+  margin-bottom: 15px;
+}
+.input-group[data-why="passw"]{
+  margin-bottom: 0;
 }
