@@ -1,4 +1,4 @@
 <?php
-echo "Hello world!<br>";
-echo "It's the login page.";
+echo "<h1>Hello world!</h1><br>";
+echo "<h1>It's the login page.</h1>";
 ?>
