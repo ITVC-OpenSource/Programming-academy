@@ -2,3 +2,11 @@
   font-family: AMYSans;
   src: url("../font/AMYSans.ttf");
 }
+#open-menu{
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+#open-menu::before{
+  font-size: 30px;
+}

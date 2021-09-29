@@ -1,4 +1,4 @@
 <?php
-echo "<h1>Hello world!</h1><br>";
-echo "<h1>It's the login page.</h1>";
+include(__DIR__ . '/header.php');
 ?>
+<h1>اینجا صفحه ورود است!</h1>
