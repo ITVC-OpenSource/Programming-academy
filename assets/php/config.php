@@ -23,9 +23,11 @@ if (!$PDO) {
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/bootstrap-tagsinput.css">
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/bootstrap-icons.min.css">
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/fontawesome-all.css">
+<link rel="stylesheet" href="<?php echo $server; ?>/assets/css/material.min.css">
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/style.min.css">
 <base href="<?php echo $server; ?>">
 <script src="<?php echo $server; ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php echo $server; ?>/assets/js/jquery.min.js"></script>
 <script src="<?php echo $server; ?>/assets/js/app.js"></script>
+<script src="<?php echo $server; ?>/assets/js/material.min.js"></script>
 </head>
