@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>آموزش یعنی AMY98.IR</title>
   </head>
-  <body class="bg-light text-secondary">
+  <body class="bg-light text-secondary container">
     <header>
       <button type="button" name="open-menu" class="btn icon-btn bi bi-list" id="open-menu"></button>
       <nav>
