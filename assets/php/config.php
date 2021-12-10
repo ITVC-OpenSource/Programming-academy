@@ -1,4 +1,5 @@
 <?php
+include(__DIR__ . "/functions.php");
 if (!isset($_SESSION)) {
     session_start();
 }
@@ -8,10 +9,13 @@ $dbu = "root";
 $dbp = "";
 $dbn = "ms-main-source-db";
 $PDO = new PDO("mysql:host=$dbh;dbname=$dbn" , $dbu , $dbp);
+$GLOBALS['PDO'] = $PDO;
 if (!$PDO) {
     die("Error in load files!\nPlease try again later!");
 } else {
     $user_data = $PDO->query("SELECT * FROM `users` WHERE `uname` = '" . $_COOKIE['uname'] . "' AND `passw` = '" . $_COOKIE['passw'] . "'")->fetch(PDO::FETCH_ASSOC);
+    $user_data['followings'] = explode("," , $user_data['followings']);
+    $GLOBALS["user_data"] = $user_data;
 }
 ?>
 <head>
@@ -23,11 +27,10 @@ if (!$PDO) {
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/bootstrap-tagsinput.css">
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/bootstrap-icons.min.css">
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/fontawesome-all.css">
-<link rel="stylesheet" href="<?php echo $server; ?>/assets/css/material.min.css">
 <link rel="stylesheet" href="<?php echo $server; ?>/assets/css/style.min.css">
 <base href="<?php echo $server; ?>">
 <script src="<?php echo $server; ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php echo $server; ?>/assets/js/jquery.min.js"></script>
 <script src="<?php echo $server; ?>/assets/js/app.js"></script>
-<script src="<?php echo $server; ?>/assets/js/material.min.js"></script>
+<script src="<?php echo $server; ?>/assets/js/emojipicker.js"></script>
 </head>
